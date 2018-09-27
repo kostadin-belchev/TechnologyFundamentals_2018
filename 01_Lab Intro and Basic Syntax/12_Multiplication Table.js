@@ -4,4 +4,4 @@ const multiplicationTable = (number) => {
   }
 }
 
-multiplicationTable(5)
+multiplicationTable(3)
