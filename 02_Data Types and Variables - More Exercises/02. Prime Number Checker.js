@@ -1,5 +1,8 @@
-const solve = (num) => {
-  return (num % num === 0 && num % 1 === 0) ? true : false
+const isPrime = num => {
+  for(let i = 2; i < num; i++)
+    if(num % i === 0) return false;
+  return num !== 1 && num !== 0;
 }
 
-console.log(solve(7))
+console.log(isPrime(2))
+console.log(isPrime(8))
