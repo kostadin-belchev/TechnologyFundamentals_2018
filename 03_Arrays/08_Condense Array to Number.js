@@ -3,7 +3,6 @@ const solve = (nums = [Number]) => {
     let condensed = [nums.length - 1]
     for (let i = 0; i < nums.length - 1; i++) {
       condensed[i] = nums[i] + nums[i + 1]
-      condensed
     }
     nums = condensed
   }
