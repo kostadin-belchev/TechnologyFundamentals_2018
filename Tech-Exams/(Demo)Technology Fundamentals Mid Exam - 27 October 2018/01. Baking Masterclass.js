@@ -1,13 +1,13 @@
-const solve = (inputArray = []) => {
-  const [budget, students, flourPrice, eggPrice, apronPrice] = inputArray
-  const apronsCount = students + Math.ceil(students * 0.2)
+const solve = input => {
+  const [budget, students, flourPrice, eggPrice, apronPrice] = input
+  const apronsCount = Math.ceil(students * 1.2)
   const apronsCost = apronPrice * apronsCount
 
   let flourCount = students
-  if (students > 5) {
-    let free = Math.trunc(students / 5)
-    flourCount -= free
-  }
+
+  let free = Math.floor(students / 5)
+  flourCount -= free
+
   const flourCost = flourPrice * flourCount
   const eggsCost = 10 * eggPrice * students
   const totalCost = apronsCost + flourCost + eggsCost
