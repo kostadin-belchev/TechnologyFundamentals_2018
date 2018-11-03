@@ -1,7 +1,7 @@
 const login = (array = ['']) => {
   let username = array[0]
   let password = reverseString(username)
-  password
+
   for (let i = 1; i < array.length; i++) {
     const element = array[i];
     if (element === password) {
