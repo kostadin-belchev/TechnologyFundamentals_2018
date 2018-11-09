@@ -3,10 +3,8 @@ const solve = (input = ['']) => {
   for (const inputString of input) {
     const [country, town, offer] = inputString.split(' > ')
     if (!countriesToTowns.has(country)) {
-      countriesToTowns.set(country, new Map())
+      // countriesToTowns.set(country, new Map())
     }
-    const currCountry = countriesToTowns.get(country)
-    currCountry
   }
 }
 
