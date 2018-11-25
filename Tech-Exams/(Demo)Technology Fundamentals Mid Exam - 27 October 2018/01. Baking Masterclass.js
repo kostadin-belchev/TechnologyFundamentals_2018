@@ -13,7 +13,7 @@ const solve = input => {
   const totalCost = apronsCost + flourCost + eggsCost
   let outcome = budget - totalCost
   if (outcome >= 0) {
-    // budget is enought
+    // budget is enough
     return `Items purchased for ${totalCost.toFixed(2)}$.`
   }
   return `${Math.abs(outcome).toFixed(2)}$ more needed.`
